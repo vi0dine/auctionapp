@@ -9,6 +9,14 @@
 # move said applications out of the umbrella.
 import Config
 
+config :auction, ecto_repos: [Auction.Repo]
+config :auction, Auction.Repo,
+  database: "auction",
+  username: "viodine",
+  password: "ViGilantE281192!",
+  hostname: "localhost",
+  port: "5432"
+
 config :auction_web,
   generators: [context_app: false]
 
