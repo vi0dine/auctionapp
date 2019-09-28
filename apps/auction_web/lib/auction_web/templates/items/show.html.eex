@@ -1,0 +1,6 @@
+<p>
+  <strong><%= @item.title %></strong> : <span> <%= @item.ends_at %> </span>
+</p>
+<p>
+  <%= @item.description %>
+</p>
