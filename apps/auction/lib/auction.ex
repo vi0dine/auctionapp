@@ -18,8 +18,8 @@ defmodule Auction do
   def new_item(), do: Item.changeset(%Item{})
 
   def insert_item(attrs) do
-    Auction.Item
-    |> struct(attrs)
+    %Item{}
+    |> Item.changeset(attrs)
     |> @repo.insert()
   end
 
