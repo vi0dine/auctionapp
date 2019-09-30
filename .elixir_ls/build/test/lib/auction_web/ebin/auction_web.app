@@ -17,7 +17,9 @@
                         'Elixir.AuctionWeb.PageView',
                         'Elixir.AuctionWeb.Router',
                         'Elixir.AuctionWeb.Router.Helpers',
-                        'Elixir.AuctionWeb.UserSocket']},
+                        'Elixir.AuctionWeb.UserController',
+                        'Elixir.AuctionWeb.UserSocket',
+                        'Elixir.AuctionWeb.UserView']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.AuctionWeb.Application',[]}}]}.
