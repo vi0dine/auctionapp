@@ -1,9 +1,10 @@
 {application,auction,
-             [{applications,[kernel,stdlib,elixir,logger,postgrex,ecto_sql]},
+             [{applications,[kernel,stdlib,elixir,logger,argon2_elixir,
+                             postgrex,ecto_sql]},
               {description,"auction"},
               {modules,['Elixir.Auction','Elixir.Auction.Application',
-                        'Elixir.Auction.Item','Elixir.Auction.Repo',
-                        'Elixir.Auction.User']},
+                        'Elixir.Auction.Item','Elixir.Auction.Password',
+                        'Elixir.Auction.Repo','Elixir.Auction.User']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.Auction.Application',[]}}]}.
