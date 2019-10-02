@@ -54,10 +54,15 @@ let socket = new Socket("/socket", { params: { token: window.userToken } });
 // Finally, connect to the socket:
 socket.connect();
 
-let match = document.location.pathname.match(/\/items\/(d+)$/);
+let match = document.location.pathname.match(/\/items\/(\d+)$/);
 if (match) {
   let itemId = match[1];
   let channel = socket.channel(`item:${itemId}`, {});
+
+  channel.on("new_bid", data => {
+    console.log("new_bid message received", data);
+  });
+
   channel
     .join()
     .receive("ok", resp => {
